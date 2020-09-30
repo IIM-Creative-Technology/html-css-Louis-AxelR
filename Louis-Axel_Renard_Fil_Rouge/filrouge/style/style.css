@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+       
+}
+
+/* POLICE */
+
+
+
+
+
+
+/*header*/
+
+header {
+    margin: auto;
+    height: 150px;
+    width: 100%;
+    background-color:whitesmoke;   
+    
+}
+header .img{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    height: 150px;
+    
+}
+
+header div {
+    justify-content:center;
+}
+
+/*nav*/
+nav {
+    margin: auto;
+    height: 100px;
+    width:100%;
+    background-color:rgb(48, 48, 48);;
+
+}
+
+
+ 
+
+
+nav ul {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav a {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+}
+.shadow {
+font-size: 1.5em;
+
+}
+
+/*main*/
+#main #annonce{
+    text-transform: bold;
+    font-size: 3em;
+}
+main {
+    margin: auto;
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+    height: 800px;
+}
+
+#main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#main .firstsondage .sondage{
+display: flex;
+flex-flow: column;
+
+}
+.sondage img{
+    height:100%;
+    
+    transition: 1s;
+    opacity: 0.5;
+}
+.sondage{
+    text-align: center;
+}
+
+.sondage img:hover{
+    height:  100%; 
+     
+    opacity: 1;
+    transform: scale(1.3);
+}
+.firstsondage a {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+.firstsondage{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+#main div{
+    height: 200px;
+    margin-top: 30px;
+}
+
+/*sondage sports*/
+.general{
+    display: flex;
+    justify-content:center;
+    width: 600px;
+    height: 200px;
+    border: black solid 2px;
+    border-radius: 50px;
+}
+
+
+form{
+    display: block;
+}
+
+.question {
+    font-size: 1.5em;
+    text-align: center;
+}
+.sondage {
+    font-size: 16px;
+    margin-left: 10px ;
+    margin-bottom: 2px;
+    justify-content: center;
+}
+.envoyer{
+    display: flex;
+    justify-content: center;
+}
+/*classement*/
+
+td{
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+th{
+    border-bottom: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#container {
+        
+    max-width: 80%;
+    margin: 0 ;
+    padding: 25px;
+    background-color: rgb(206, 206, 206);
+
+}
+#table{
+    width: 100%;
+    font-size: .875rem;
+    border: none;
+}
+/*footer*/
+
+footer{
+    background-color: whitesmoke;
+    color: black;
+    padding: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 1024px) {
+    header nav a {
+        padding: 15px;
+    }
+    #tagline {
+        padding: 50px 25px;
+    }
+    header nav, .flex, footer nav {
+        -ms-flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+
+}
